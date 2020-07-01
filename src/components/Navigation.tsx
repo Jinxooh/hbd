@@ -20,7 +20,7 @@ const Navigation = () => {
         About
       </NavLink>
       <NavLink to="/test" activeStyle={activeStyle} style={defaultStyle}>
-        Contact
+        Test
       </NavLink>
     </div>
   );
