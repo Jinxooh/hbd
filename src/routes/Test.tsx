@@ -1,6 +1,11 @@
 import React from "react";
+import styled from 'styled-components';
+
+const TestContainer = styled.div`
+  color: red;
+`
 
 const Test = () => {
-  return <div>This is Test page</div>;
+  return <TestContainer>This is Test page</TestContainer>;
 };
 export default Test;

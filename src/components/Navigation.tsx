@@ -19,7 +19,7 @@ const Navigation = () => {
       <NavLink to="/about" activeStyle={activeStyle} style={defaultStyle}>
         About
       </NavLink>
-      <NavLink to="/contact" activeStyle={activeStyle} style={defaultStyle}>
+      <NavLink to="/test" activeStyle={activeStyle} style={defaultStyle}>
         Contact
       </NavLink>
     </div>
