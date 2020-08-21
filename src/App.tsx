@@ -15,6 +15,8 @@ const AppContainer = styled.div`
   &,
   & * {
     box-sizing: border-box;
+
+    background-color: ${(props) => props.theme.backgroundColor}
   }
 `;
 
@@ -32,6 +34,7 @@ const App = () => {
               <Route path='/' exact={true} component={Home} />
               <Route path='/about' component={About} />
               <Route path='/letter' exact={true} component={Letter} />
+              <Route path='/camera' component={Camera} />
             </Col>
           </Row>
         </AppContainer>

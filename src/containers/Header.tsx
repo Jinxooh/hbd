@@ -8,7 +8,7 @@ const Header = styled.div`
 const HeaderContainer = () => (
   <Header>
     <h1>
-      Happy Birth Day
+    🎂Happy Birth Day🎂
     </h1>
   </Header>
 )
