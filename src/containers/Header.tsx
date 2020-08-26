@@ -1,15 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
+import title from '../images/title1.png';
 
 const Header = styled.div`
+  text-align: center;
   color: ${(props) => props.theme.fontColor};
+`
+
+const Image = styled.img`
+  width: 20%;
+  min-width: 200px;
 `
 
 const HeaderContainer = () => (
   <Header>
-    <h1>
-    🎂Happy Birth Day🎂
-    </h1>
+    <Image src={title} />
   </Header>
 )
 

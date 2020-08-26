@@ -8,15 +8,16 @@ import {
 } from './routes';
 import { Col, Row } from './components';
 import { Header, Menu } from './containers';
-import styled, { ThemeProvider } from 'styled-components';
-import { basicTheme } from './styles/theme'
+import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
+import { basicTheme } from './styles/theme';
+import reset from "styled-reset";
 
 const AppContainer = styled.div`
   &,
   & * {
     box-sizing: border-box;
 
-    background-color: ${(props) => props.theme.backgroundColor}
+    background-color: ${(props) => props.theme.backgroundColor};
   }
 `;
 
@@ -27,9 +28,9 @@ const App = () => {
     >
       <BrowserRouter>
         <AppContainer>
-          <Header />
+        <Header />
           <Row>
-            <Col xs={12} sm={9} md={6} lg={6}>
+            <Col xs={6} sm={6} md={12} lg={12}>
               <Menu />
               <Route path='/' exact={true} component={Home} />
               <Route path='/about' component={About} />
