@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 //Column 컴포넌트

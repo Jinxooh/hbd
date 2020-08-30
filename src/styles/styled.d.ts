@@ -3,6 +3,11 @@ import 'styled-components';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
+    palette: {
+      blue: string;
+      gray: string;
+      pink: string;
+    }
     basicWidth: string;
     backgroundColor: string;
     color: {

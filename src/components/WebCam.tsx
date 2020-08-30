@@ -1,5 +1,5 @@
 import React from "react";
-import Webcam, { WebcamProps } from "react-webcam";
+import Webcam from "react-webcam";
 
 const WebCam = () =>
   <Webcam

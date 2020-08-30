@@ -8,9 +8,8 @@ import {
 } from './routes';
 import { Col, Row } from './components';
 import { Header, Menu } from './containers';
-import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import { basicTheme } from './styles/theme';
-import reset from "styled-reset";
 
 const AppContainer = styled.div`
   &,

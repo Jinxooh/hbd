@@ -1,6 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import styled from 'styled-components';
 
+const MenuContainer = styled.div`
+  font-size: 50px;
+  display: flex;
+  justify-content: space-around;
+`;
 const activeStyle = {
   color: "#09D3AC",
 };
@@ -10,22 +16,24 @@ const defaultStyle = {
   color: "black",
 };
 
+const menuList = [
+  { path: '/', name: 'Home'},
+  { path: '/about', name: 'About'},
+  { path: '/letter', name: 'Letter'},
+  { path: '/camera', name: 'Camera'},
+]
+
 const Menu = () => {
   return (
-    <div className="Menu">
-      <NavLink to="/" activeStyle={activeStyle} exact style={defaultStyle}>
-        Home
-      </NavLink>
-      <NavLink to="/about" activeStyle={activeStyle} style={defaultStyle}>
-        About
-      </NavLink>
-      <NavLink to="/letter" activeStyle={activeStyle} exact style={defaultStyle}>
-        Letter
-      </NavLink>
-      <NavLink to="/camera" activeStyle={activeStyle} exact style={defaultStyle}>
-        Camera
-      </NavLink>
-    </div>
+    <MenuContainer>
+      { menuList.map(item => {
+        return (
+          <NavLink to={item.path} activeStyle={activeStyle} exact style={defaultStyle}>
+            {item.name}
+          </NavLink>
+        )
+      })}
+    </MenuContainer>
   );
 };
 

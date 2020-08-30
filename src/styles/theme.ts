@@ -2,6 +2,11 @@
 import { DefaultTheme } from 'styled-components';
 
 const basicTheme: DefaultTheme = {
+  palette: {
+    blue: '#228be6',
+    gray: '#495057',
+    pink: '#f06595'
+  },
   basicWidth: '320px',
   backgroundColor: '#fdfce2',
   color: {
