@@ -13,12 +13,14 @@ const useAudio = (url: string, auto: boolean = false) => {
   useEffect(() => {
     audio.addEventListener('ended', () => setPlaying(false))
     return () => {
+      audio.pause();
       audio.removeEventListener('ended', () => setPlaying(false));
     };
   }, [])
 
   return [playing, toggle] as const;
 }
+
 
 type Url = {
   url: string;
