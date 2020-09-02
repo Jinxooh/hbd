@@ -15,8 +15,9 @@ const AppContainer = styled.div`
   &,
   & * {
     box-sizing: border-box;
-
-    background-color: ${(props) => props.theme.backgroundColor};
+  }
+  & {
+    background: ${(props) => props.theme.backgroundColor};
   }
 `;
 

@@ -1,11 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from 'styled-components';
+import { Col, Row, Button } from '../components';
 
 const MenuContainer = styled.div`
-  font-size: 50px;
-  display: flex;
-  justify-content: space-around;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
 `;
 const activeStyle = {
   color: "#09D3AC",
@@ -26,13 +27,17 @@ const menuList = [
 const Menu = () => {
   return (
     <MenuContainer>
+      <Row>
       { menuList.map(item => {
         return (
-          <NavLink to={item.path} activeStyle={activeStyle} exact style={defaultStyle}>
-            {item.name}
-          </NavLink>
+          <Col xs={6} sm={3} md={3} lg={3}>
+            <NavLink to={item.path} activeStyle={activeStyle} exact style={defaultStyle}>
+              <Button color={'pink'}>{item.name}</Button>
+            </NavLink>
+          </Col>
         )
       })}
+      </Row>
     </MenuContainer>
   );
 };
