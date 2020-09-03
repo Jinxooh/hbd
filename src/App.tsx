@@ -26,7 +26,7 @@ const App = () => {
     <ThemeProvider
       theme={basicTheme}
     >
-      <BrowserRouter>
+      <BrowserRouter basename='/hbd'>
         <AppContainer>
         <Header />
         <Menu />
