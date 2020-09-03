@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    (function(l) {
+      // 파싱 결과를 토대로 URI 내용을 대체한다
+      window.history.replaceState(null, null,
+        l.pathname.slice(0, -1) + (q.p || '') +
+        (q.q ? ('?' + q.q) : '') +
+        l.hash
+      );
+    }(window.location)
+
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,7 +34,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Happy Birth Day</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
