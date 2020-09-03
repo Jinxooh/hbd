@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/hbd/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/hbd/static/js/main.882058e5.chunk.js",
-    "main.js.map": "/hbd/static/js/main.882058e5.chunk.js.map",
+    "main.js": "/hbd/static/js/main.8f8cee87.chunk.js",
+    "main.js.map": "/hbd/static/js/main.8f8cee87.chunk.js.map",
     "runtime-main.js": "/hbd/static/js/runtime-main.9a1332b8.js",
     "runtime-main.js.map": "/hbd/static/js/runtime-main.9a1332b8.js.map",
-    "static/js/2.2e089737.chunk.js": "/hbd/static/js/2.2e089737.chunk.js",
-    "static/js/2.2e089737.chunk.js.map": "/hbd/static/js/2.2e089737.chunk.js.map",
+    "static/js/2.fc47dda4.chunk.js": "/hbd/static/js/2.fc47dda4.chunk.js",
+    "static/js/2.fc47dda4.chunk.js.map": "/hbd/static/js/2.fc47dda4.chunk.js.map",
     "index.html": "/hbd/index.html",
-    "precache-manifest.0c9d14953711e19d48d32935ce458855.js": "/hbd/precache-manifest.0c9d14953711e19d48d32935ce458855.js",
+    "precache-manifest.eaa8d3912416882ad3830bc73adf7c56.js": "/hbd/precache-manifest.eaa8d3912416882ad3830bc73adf7c56.js",
     "service-worker.js": "/hbd/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/hbd/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.2e089737.chunk.js.LICENSE.txt": "/hbd/static/js/2.2e089737.chunk.js.LICENSE.txt",
+    "static/js/2.fc47dda4.chunk.js.LICENSE.txt": "/hbd/static/js/2.fc47dda4.chunk.js.LICENSE.txt",
     "static/media/happysong.mp3": "/hbd/static/media/happysong.13ba3b51.mp3",
     "static/media/starwars.mp3": "/hbd/static/media/starwars.df8e2625.mp3",
     "static/media/title1.png": "/hbd/static/media/title1.ce2597ac.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9a1332b8.js",
-    "static/js/2.2e089737.chunk.js",
+    "static/js/2.fc47dda4.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.882058e5.chunk.js"
+    "static/js/main.8f8cee87.chunk.js"
   ]
 }
