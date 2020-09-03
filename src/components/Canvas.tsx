@@ -34,7 +34,6 @@ const Canvas = ({ width, height }: CanvasProps) => {
               var colorVal01 =  Math.floor(Math.random()*106) + 150;
               var colorVal02 =  Math.floor(Math.random()*106) + 150;
               var opacityVal =  (Math.floor(Math.random()*11)) / 10;
-              var colorVal =  Math.floor(Math.random()*151);
               var radgrad = ctx.createRadialGradient(starLeft,starTop,0,starLeft,starTop,starSize);
               radgrad.addColorStop(0, 'rgba(255, 255, 255, 1)');
               radgrad.addColorStop(1, "rgba(" + colorVal01 + ", " + colorVal02 + ", " + 255 + ", " + opacityVal + ")");
