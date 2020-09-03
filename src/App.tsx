@@ -29,9 +29,9 @@ const App = () => {
       <BrowserRouter>
         <AppContainer>
         <Header />
+        <Menu />
           <Row>
-            <Col xs={6} sm={6} md={12} lg={12}>
-              <Menu />
+            <Col xs={12} sm={12} md={12} lg={12}>
               <Route path='/' exact={true} component={Home} />
               <Route path='/about' component={About} />
               <Route path='/letter' exact={true} component={Letter} />

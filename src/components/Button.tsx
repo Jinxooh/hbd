@@ -18,7 +18,7 @@ const colorStyles = css`
 
 const StyledButton = styled.button`
   /* 공통 스타일 */
-  display: inline-flex;
+  /* display: inline-flex; */
   outline: none;
   border: none;
   border-radius: 4px;
