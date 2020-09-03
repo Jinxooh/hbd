@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useRef, useState, useLayoutEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
+import Canvas from './Canvas';
 
 const StarwarsContainer = styled.div`
   width: 100%;
@@ -51,9 +52,29 @@ const Crawl = styled.div`
 `
 
 const Starwars = () => {
+  const divRef = useRef<HTMLDivElement>(null);
+  const [size, setSize] = useState([0, 0]);
+
+  useLayoutEffect(() => {
+    function updateSize() {
+      if (divRef.current) {
+        const { clientWidth, clientHeight } = divRef.current;
+        console.log(clientWidth, clientHeight)
+        setSize([clientWidth, clientHeight])
+      }
+      return size;
+    }
+
+    window.addEventListener('resize', updateSize);
+    updateSize();
+    return () => window.removeEventListener('resize', updateSize);
+  }, []);
+
+  const [ width, height ] = size;
 
   return (
-    <StarwarsContainer>
+    <StarwarsContainer ref={divRef}>
+      <Canvas width={width} height={height} />
       <Section>
         <Crawl>
           <div>
