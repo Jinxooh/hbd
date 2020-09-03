@@ -26,7 +26,7 @@ const App = () => {
     <ThemeProvider
       theme={basicTheme}
     >
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename={process.env.PUBLIC_URL + '/'}>
         <AppContainer>
         <Header />
         <Menu />
