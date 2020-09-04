@@ -19,6 +19,7 @@ const AppContainer = styled.div`
   & {
     background: ${(props) => props.theme.backgroundColor};
   }
+  min-height: 100%;
 `;
 
 const App = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { lighten, darken } from 'polished';
+import { lighten } from 'polished';
 
 const colorStyles = css`
   ${({ theme, color }: any) => {
