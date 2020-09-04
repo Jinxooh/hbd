@@ -40,7 +40,7 @@ const StyledButton = styled.button`
 
 type Button = {
   children: any;
-  color: 'pink' | 'gray' | 'blue';
+  color?: 'pink' | 'gray' | 'blue';
   [x:string]: any;
 }
 
