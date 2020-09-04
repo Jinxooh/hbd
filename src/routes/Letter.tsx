@@ -7,7 +7,6 @@ const Letter = () => {
     <div>
       <Starwars />
       <Music url={starwars} auto={true}/>
-      Letter
     </div>
   )
 }

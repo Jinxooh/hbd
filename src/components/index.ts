@@ -5,6 +5,7 @@ import Music from './Music';
 import Button from './Button';
 import Canvas from './Canvas';
 import Starwars from './Starwars';
+import Image from './Image';
 
 export {
   Button,
@@ -14,4 +15,5 @@ export {
   Music,
   Canvas,
   Starwars,
+  Image,
 }

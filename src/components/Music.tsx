@@ -1,4 +1,5 @@
 import React, { useState , useEffect } from 'react';
+import styled from 'styled-components'
 import Button from './Button';
 
 const useAudio = (url: string, auto: boolean = false) => {
@@ -28,13 +29,20 @@ type Url = {
   auto?: boolean;
 }
 
+const MusicContainer = styled.div`
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 10px;
+`
+
 const Music = ({url, auto = false}: Url) => {
   const [playing, toggle] = useAudio(url, auto);
 
   return (
-    <div>
+    <MusicContainer>
       <Button onClick={toggle}>{playing ? 'Pause':'Play'}</Button>
-    </div>
+    </MusicContainer>
   )
 }
 

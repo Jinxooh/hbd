@@ -1,11 +1,18 @@
 import React from "react";
-import { Music } from '../components';
+import styled from 'styled-components';
+import { Music, Image } from '../components';
+import { main } from '../assets';
+
 const happysong = require("../assets/happysong.mp3");
 
+const HomeContainer = styled.div`
+  text-align: center;
+`;
+
 const Home = () => {
-  return <div>
-    <Music url={happysong} auto={true}/>
-    This is Home page
-    </div>;
+  return <HomeContainer>
+      <Music url={happysong} auto={true}/>
+      <Image src={main} />
+    </HomeContainer>;
 };
 export default Home;

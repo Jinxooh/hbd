@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import title from '../assets/title1.png';
+import { title } from '../assets';
 
 const Header = styled.div`
   text-align: center;
