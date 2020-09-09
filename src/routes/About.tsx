@@ -1,6 +1,7 @@
 import React from "react";
+import { Rainbow } from '../components';
 
 const About = () => {
-  return <div>This is About page</div>;
+  return <Rainbow>This is About page</Rainbow>;
 };
 export default About;

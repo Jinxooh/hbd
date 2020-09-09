@@ -6,6 +6,7 @@ import Button from './Button';
 import Canvas from './Canvas';
 import Starwars from './Starwars';
 import Image from './Image';
+import Rainbow from './Rainbow';
 
 export {
   Button,
@@ -16,4 +17,5 @@ export {
   Canvas,
   Starwars,
   Image,
+  Rainbow,
 }
