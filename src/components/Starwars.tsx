@@ -59,7 +59,6 @@ const Starwars = () => {
     function updateSize() {
       if (divRef.current) {
         const { clientWidth, clientHeight } = divRef.current;
-        console.log(clientWidth, clientHeight)
         setSize([clientWidth, clientHeight])
       }
       return size;

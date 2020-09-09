@@ -24,7 +24,7 @@ const AppContainer = styled.div`
 `;
 
 const App = () => {
-  const [count, setCount] = useState(5);
+  const [count, setCount] = useState(1);
 
   useEffect(() => {
     setTimeout(() => setCount(count - 1), 1000)
