@@ -18,10 +18,10 @@ const defaultStyle = {
 };
 
 const menuList = [
-  { path: '/', name: 'Home'},
-  { path: '/about', name: 'About'},
-  { path: '/letter', name: 'Letter'},
-  { path: '/camera', name: 'Camera'},
+  { id: 1, path: '/', name: 'Home'},
+  { id: 2, path: '/about', name: 'About'},
+  { id: 3, path: '/letter', name: 'Letter'},
+  { id: 4, path: '/camera', name: 'Camera'},
 ]
 
 const Menu = () => {
@@ -30,7 +30,7 @@ const Menu = () => {
       <Row>
       { menuList.map(item => {
         return (
-          <Col xs={6} sm={3} md={3} lg={3}>
+          <Col key={item.id} xs={6} sm={3} md={3} lg={3}>
             <NavLink to={item.path} activeStyle={activeStyle} exact style={defaultStyle}>
               <Button color={'pink'}>{item.name}</Button>
             </NavLink>
