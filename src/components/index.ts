@@ -7,6 +7,7 @@ import Canvas from './Canvas';
 import Starwars from './Starwars';
 import Image from './Image';
 import Rainbow from './Rainbow';
+import CountDown from './CountDown';
 
 export {
   Button,
@@ -18,4 +19,5 @@ export {
   Starwars,
   Image,
   Rainbow,
+  CountDown,
 }

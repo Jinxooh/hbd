@@ -1,7 +1,9 @@
 import React from "react";
-import { Rainbow } from '../components';
+import { CountDown } from '../components';
 
 const About = () => {
-  return <Rainbow>This is About page</Rainbow>;
+  return (
+    <CountDown count={5000} />
+  )
 };
 export default About;
