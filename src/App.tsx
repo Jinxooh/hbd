@@ -30,10 +30,10 @@ const App = () => {
     setTimeout(() => setCount(count - 1), 1000)
   }, [count]);
 
-  // const [count, setCount] = useState(new Date('2020/09/10 12:00:00').getTime() - new Date().getTime());
+  // const [count, setCount] = useState(new Date('2020/09/15 00:00:00').getTime() - new Date().getTime());
 
   // useEffect(() => {
-  //   count > 0 && setTimeout(() => setCount(new Date('2020/09/10 12:00:00').getTime() - new Date().getTime()), 1000)
+  //   count > 0 && setTimeout(() => setCount(new Date('2020/09/15 00:00:00').getTime() - new Date().getTime()), 1000)
   // }, [count]);
 
   return (
@@ -42,7 +42,7 @@ const App = () => {
     >
       <BrowserRouter basename={process.env.PUBLIC_URL + '/'}>
         <AppContainer>
-        <CountContext.Provider value={false}>
+        <CountContext.Provider value={count}>
           <CountDown count={count} first={true} />
           { count < 0 && (
             <>

@@ -1,3 +1,3 @@
 import React from 'react';
 
-export const CountContext = React.createContext(true);
+export const CountContext = React.createContext(0);
