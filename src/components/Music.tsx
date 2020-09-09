@@ -1,6 +1,6 @@
 import React, { useState , useEffect } from 'react';
 import styled from 'styled-components'
-import Button from './Button';
+import { play, pause } from '../assets';
 
 const useAudio = (url: string, auto: boolean = false) => {
   const [audio] = useState(new Audio(url))
@@ -33,7 +33,7 @@ const MusicContainer = styled.div`
   position: fixed;
   top: 0;
   right: 0;
-  margin: 10px;
+  margin: 10px 20px;
 `
 
 const Music = ({url, auto = false}: Url) => {
@@ -41,7 +41,7 @@ const Music = ({url, auto = false}: Url) => {
 
   return (
     <MusicContainer>
-      <Button onClick={toggle}>{playing ? 'Pause':'Play'}</Button>
+      <img style={{ width: '30px', height: '30px' }} onClick={toggle} src={playing ? pause : play} />
     </MusicContainer>
   )
 }
