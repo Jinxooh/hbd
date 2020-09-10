@@ -1,27 +1,38 @@
 {
   "files": {
     "main.css": "/hbd/static/css/main.32214e66.chunk.css",
-    "main.js": "/hbd/static/js/main.c184d84c.chunk.js",
-    "main.js.map": "/hbd/static/js/main.c184d84c.chunk.js.map",
+    "main.js": "/hbd/static/js/main.37a8c9d6.chunk.js",
+    "main.js.map": "/hbd/static/js/main.37a8c9d6.chunk.js.map",
     "runtime-main.js": "/hbd/static/js/runtime-main.9a1332b8.js",
     "runtime-main.js.map": "/hbd/static/js/runtime-main.9a1332b8.js.map",
-    "static/js/2.3bfd2241.chunk.js": "/hbd/static/js/2.3bfd2241.chunk.js",
-    "static/js/2.3bfd2241.chunk.js.map": "/hbd/static/js/2.3bfd2241.chunk.js.map",
+    "static/css/2.fb346933.chunk.css": "/hbd/static/css/2.fb346933.chunk.css",
+    "static/js/2.66156489.chunk.js": "/hbd/static/js/2.66156489.chunk.js",
+    "static/js/2.66156489.chunk.js.map": "/hbd/static/js/2.66156489.chunk.js.map",
     "index.html": "/hbd/index.html",
-    "precache-manifest.09e839bc98743b92556e2aa5e5a4ae90.js": "/hbd/precache-manifest.09e839bc98743b92556e2aa5e5a4ae90.js",
+    "precache-manifest.df047fe5c0320a25ccd24aea51681acd.js": "/hbd/precache-manifest.df047fe5c0320a25ccd24aea51681acd.js",
     "service-worker.js": "/hbd/service-worker.js",
+    "static/css/2.fb346933.chunk.css.map": "/hbd/static/css/2.fb346933.chunk.css.map",
     "static/css/main.32214e66.chunk.css.map": "/hbd/static/css/main.32214e66.chunk.css.map",
-    "static/js/2.3bfd2241.chunk.js.LICENSE.txt": "/hbd/static/js/2.3bfd2241.chunk.js.LICENSE.txt",
+    "static/js/2.66156489.chunk.js.LICENSE.txt": "/hbd/static/js/2.66156489.chunk.js.LICENSE.txt",
     "static/media/index.css": "/hbd/static/media/ShareTechMono-Regular.972d54ac.ttf",
     "static/media/happysong.mp3": "/hbd/static/media/happysong.13ba3b51.mp3",
+    "static/media/image1.jpg": "/hbd/static/media/image1.18f2a55c.jpg",
+    "static/media/image2.jpg": "/hbd/static/media/image2.99c7fc1e.jpg",
+    "static/media/image3.jpg": "/hbd/static/media/image3.e4d3ad78.jpg",
+    "static/media/image4.jpg": "/hbd/static/media/image4.7cea979c.jpg",
+    "static/media/image5.jpg": "/hbd/static/media/image5.1f866183.jpg",
+    "static/media/image6.jpg": "/hbd/static/media/image6.1af42a0d.jpg",
+    "static/media/image7.jpg": "/hbd/static/media/image7.f71c142b.jpg",
+    "static/media/image8.jpg": "/hbd/static/media/image8.00fbb162.jpg",
     "static/media/main.jpg": "/hbd/static/media/main.60813d74.jpg",
     "static/media/starwars.mp3": "/hbd/static/media/starwars.df8e2625.mp3",
     "static/media/title1.png": "/hbd/static/media/title1.ce2597ac.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9a1332b8.js",
-    "static/js/2.3bfd2241.chunk.js",
+    "static/css/2.fb346933.chunk.css",
+    "static/js/2.66156489.chunk.js",
     "static/css/main.32214e66.chunk.css",
-    "static/js/main.c184d84c.chunk.js"
+    "static/js/main.37a8c9d6.chunk.js"
   ]
 }
