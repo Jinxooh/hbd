@@ -28,7 +28,7 @@ const Camera = () => {
 
   return (
     <CameraContainer ref={divRef}>
-      <WebCam/>
+      <WebCam width={width} height={height} />
     </CameraContainer>
   )
 }

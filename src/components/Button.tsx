@@ -38,13 +38,13 @@ const StyledButton = styled.button`
   }
 `;
 
-type Button = {
+type ButtonProps = {
   children: any;
   color?: 'pink' | 'gray' | 'blue';
   [x:string]: any;
 }
 
-function Button({ children, color, ...rest }: Button) {
+function Button({ children, color, ...rest }: ButtonProps) {
   return (
     <StyledButton
       color={color || 'blue'}

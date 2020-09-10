@@ -8,6 +8,7 @@ import Starwars from './Starwars';
 import Image from './Image';
 import Rainbow from './Rainbow';
 import CountDown from './CountDown';
+import BigImoji from './BigImoji';
 
 export {
   Button,
@@ -20,4 +21,5 @@ export {
   Image,
   Rainbow,
   CountDown,
+  BigImoji,
 }
