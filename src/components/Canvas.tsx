@@ -1,5 +1,4 @@
 import React, { useRef, useState, useLayoutEffect } from 'react';
-import { position } from 'polished';
 
 type CanvasProps = {
   width: number;

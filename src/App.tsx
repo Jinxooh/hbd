@@ -30,7 +30,7 @@ const App = () => {
   //   setTimeout(() => setCount(count - 1), 1000)
   // }, [count]);
 
-  const day = '2020/09/11 00:00:00'
+  const day = '2020/09/15 00:00:00'
   const [count, setCount] = useState(new Date(day).getTime() - new Date().getTime());
 
   useEffect(() => {
