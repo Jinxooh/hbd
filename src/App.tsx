@@ -24,17 +24,18 @@ const AppContainer = styled.div`
 `;
 
 const App = () => {
-  const [count, setCount] = useState(1);
-
-  useEffect(() => {
-    setTimeout(() => setCount(count - 1), 1000)
-  }, [count]);
-
-  // const [count, setCount] = useState(new Date('2020/09/15 00:00:00').getTime() - new Date().getTime());
+  // const [count, setCount] = useState(1);
 
   // useEffect(() => {
-  //   count > 0 && setTimeout(() => setCount(new Date('2020/09/15 00:00:00').getTime() - new Date().getTime()), 1000)
+  //   setTimeout(() => setCount(count - 1), 1000)
   // }, [count]);
+
+  const day = '2020/09/15 00:00:00'
+  const [count, setCount] = useState(new Date(day).getTime() - new Date().getTime());
+
+  useEffect(() => {
+    setTimeout(() => setCount(new Date(day).getTime() - new Date().getTime()), 1000)
+  }, [count]);
 
   return (
     <ThemeProvider

@@ -12,10 +12,9 @@ const CountDownContainer = styled.div`
 `;
 
 const CountDown = ({ count, first }: CountDownProps) => {
-  let viewCount = count;
-  if (count < 0) viewCount = Math.abs(count);
-
   const [show, setShow] = useState<null | JSX.Element>(<></>);
+  let viewCount = Math.abs(count);
+
   const [style, setStyle] = useState({
     padding: '5rem 0' ,
     opacity: 1,
@@ -23,7 +22,7 @@ const CountDown = ({ count, first }: CountDownProps) => {
   })
 
   useEffect(() => {
-    if (first && count === 1) {
+    if (first && count < 2000) {
       setStyle({
         padding: '5rem 0',
         opacity: 0,
@@ -32,9 +31,9 @@ const CountDown = ({ count, first }: CountDownProps) => {
     }
   }, [count])
 
-  const digital = (time: any) => time < 10 ? `0${time}` : time;
+  const digital = (time: number) => time < 10 ? `0${time}` : `${time}`;
 
-  const render = (children: string| JSX.Element) => {
+  const render = (children: string| JSX.Element | false) => {
     return (
     <CountDownContainer>
       <Rainbow>
@@ -52,9 +51,9 @@ const CountDown = ({ count, first }: CountDownProps) => {
       show && <CountDownContainer style={style} onTransitionEnd={onTransitionEnd}>
         <Rainbow>
           {`${Math.floor(viewCount / (1000 * 60 * 60 * 24)) > 0 ? Math.floor(viewCount / (1000 * 60 * 60 * 24)) + 'days' : ''} ${
-          Math.floor(digital(viewCount % (1000 * 60 * 60 * 24)/(1000 * 60 * 60)))}:${
-          Math.floor(digital(viewCount % (1000 * 60 * 60)/(1000 * 60)))}:${
-          Math.floor(digital(viewCount % (1000 * 60)/(1000)))} Left`}
+          digital(Math.floor(viewCount % (1000 * 60 * 60 * 24)/(1000 * 60 * 60)))}:${
+          digital(Math.floor(viewCount % (1000 * 60 * 60)/(1000 * 60)))}:${
+          digital(Math.floor(viewCount % (1000 * 60)/(1000)))} Left`}
         </Rainbow>
       </CountDownContainer>
     )
@@ -64,9 +63,9 @@ const CountDown = ({ count, first }: CountDownProps) => {
     return renderFirst();
   } else {
     return render(`${Math.floor(viewCount / (1000 * 60 * 60 * 24)) > 0 ? Math.floor(viewCount / (1000 * 60 * 60 * 24)) + 'days' : ''} ${
-      Math.floor(digital(viewCount % (1000 * 60 * 60 * 24)/(1000 * 60 * 60)))}:${
-      Math.floor(digital(viewCount % (1000 * 60 * 60)/(1000 * 60)))}:${
-      Math.floor(digital(viewCount % (1000 * 60)/(1000)))} Left`);
+      digital(Math.floor(viewCount % (1000 * 60 * 60 * 24)/(1000 * 60 * 60)))}:${
+      digital(Math.floor(viewCount % (1000 * 60 * 60)/(1000 * 60)))}:${
+      digital(Math.floor(viewCount % (1000 * 60)/(1000)))}`);
   }
 }
 

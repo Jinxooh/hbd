@@ -1,5 +1,5 @@
 import React from "react";
-import { CountDown } from '../components';
+import { CountDown, BigImoji } from '../components';
 import { CountContext } from '../context';
 import styeld from 'styled-components';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -17,6 +17,8 @@ import {
 
 const CountDownContainer = styeld.div`
   margin-bottom: 1rem;
+  text-align: center;
+  font-family: 'ShareTechMono-Regular';
 `
 
 const CarouselContainer = styeld.div`
@@ -28,7 +30,7 @@ const About = () => {
       <CountContext.Consumer>
         {count =>
         <CountDownContainer>
-          <CountDown count={count} />
+          <BigImoji>⏰ 9월 15일</BigImoji><CountDown count={count} />
         </CountDownContainer>}
       </CountContext.Consumer>
       <CarouselContainer>
