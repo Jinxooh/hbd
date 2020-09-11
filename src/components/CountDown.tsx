@@ -65,7 +65,7 @@ const CountDown = ({ count, first }: CountDownProps) => {
     return render(`${Math.floor(viewCount / (1000 * 60 * 60 * 24)) > 0 ? Math.floor(viewCount / (1000 * 60 * 60 * 24)) + 'days' : ''} ${
       digital(Math.floor(viewCount % (1000 * 60 * 60 * 24)/(1000 * 60 * 60)))}:${
       digital(Math.floor(viewCount % (1000 * 60 * 60)/(1000 * 60)))}:${
-      digital(Math.floor(viewCount % (1000 * 60)/(1000)))}`);
+      digital(Math.floor(viewCount % (1000 * 60)/(1000)))} Passed`);
   }
 }
 
