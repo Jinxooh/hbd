@@ -9,6 +9,7 @@ type CountDownProps = {
 
 const CountDownContainer = styled.div`
   text-align: center;
+  padding: 5rem 0;
 `;
 
 const CountDown = ({ count, first }: CountDownProps) => {
@@ -28,7 +29,7 @@ const CountDown = ({ count, first }: CountDownProps) => {
   const renderFirst = () => {
     if (count > 0) {
       return (
-        <CountDownContainer >
+        <CountDownContainer>
           <Rainbow>
             {`${Math.floor(viewCount / (1000 * 60 * 60 * 24)) > 0 ? Math.floor(viewCount / (1000 * 60 * 60 * 24)) + 'days' : ''} ${
             digital(Math.floor(viewCount % (1000 * 60 * 60 * 24)/(1000 * 60 * 60)))}:${
