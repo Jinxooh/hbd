@@ -31,27 +31,27 @@ const Section = styled.section`
   height: 800px;
   color: #feda4a;
   font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 500%;
+  font-size: 150%;
   font-weight: 600;
-  letter-spacing: 5px;
-  line-height: 150%;
+  letter-spacing: 0px;
+  line-height: 280%;
   perspective: 400px;
   text-align: justify;
 
   @media only screen and (min-width: ${BREAK_POINT_MOBILE}px) {
-    font-size: 300%;
-    font-weight: 500;
-    letter-spacing: 0px;
+    font-size: 250%;
+    font-weight: 600;
+    letter-spacing: 1px;
   }
   @media only screen and (min-width: ${BREAK_POINT_TABLET}px) {
-    font-size: 300%;
-    font-weight: 500;
-    letter-spacing: 0px;
+    font-size: 250%;
+    font-weight: 600;
+    letter-spacing: 3px;
   }
   @media only screen and (min-width: ${BREAK_POINT_PC}px) {
     font-size: 300%;
-    font-weight: 500;
-    letter-spacing: 0px;
+    font-weight: 600;
+    letter-spacing: 5px;
   }
 `
 const CrawlKeyFrames = keyframes`
@@ -69,7 +69,7 @@ const Crawl = styled.div`
   position: relative;
   top: 9999px;
   transform-origin: 50% 100%;
-  animation: ${CrawlKeyFrames} 60s linear infinite;
+  animation: ${CrawlKeyFrames} 80s linear infinite;
 
   & title {
     font-size: 90%;
@@ -117,7 +117,7 @@ const Starwars = () => {
               <h1>Dear my Angel Hyejung👼🏻</h1>
             </div>
 
-            <p>혜정아 안녕? 29번째 생일🎂 진심으로 축하해🥳 Oh Happy Happy Day~!음~~ 혜정이한테 해줄수 있는게 뭔지 잘 생각해보고 내가 잘 할 수 있는걸로 만들어보았어! 히히 어때 감동이야?!</p>
+            <p>혜정아 안녕? 29번째 생일🎂 진심으로 축하해🥳 Oh Happy 햅삐 Day~!음~~ 혜정이한테 해줄수 있는게 뭔지 잘 생각해보고 내가 잘 할 수 있는걸로 만들어보았어! 히히 어때 감동이야?!</p>
             <p>편지는 스타워즈 컨셉으로 잡아보았어?😄ㅋㅋ 너무 내 취향인가? ㅋㅋ 웅장하게 내 마음을 표현해 보았소💕 넘 쑥스럽당 키키</p>
             <p>내 마음을 받아줘~❤️</p>
             <p>불과 얼마전만 해도 아프지 않고 멀쩡히 돌아다녔는데 혜정이 다치고 나니까 모든 생각이 바뀌어 버린거 같아. 조금만 내가 더 신경썻으면 달라졌을까 싶기도 하고 아쉬운게 많더라고…</p>
@@ -127,9 +127,11 @@ const Starwars = () => {
             <p>앞으로 남은 날들 서로 의지하고 아껴주며 더 잘 지내도록 하자 헤헤</p>
             <p>이거 만들면서 옛날사진들을 보거나 아이디어 생각할 때 마다 너무 혜정이가 귀여웠고 또 날 생각하는 마음이 느껴지는게 너무 이쁘고 감사했어! 늘 변함없이 마음줘서 고마워💛</p>
             <p>사랑해❤️</p>
-            <p>쀼쀼</p>
+            <p>앞으로 눈이 오나 비가 오나 항상 검은머리 파뿌리 될 때까지 사랑하자! 뀨</p>
+            <p>As good as it gets!~ 이보다 난 더 좋을수 없는거 같아 이쁜아~ 히히 사랑하고~ 서로 챙겨주고 안아주는 이쁜 사랑 평생하쟝~~</p>
+            <p>쀼쀼💏</p>
             <p>2020.09.15</p>
-            <p>너의 에인절H</p>
+            <p>너의 에인절H👼🏻</p>
           </Crawl>
 
         </Section>
